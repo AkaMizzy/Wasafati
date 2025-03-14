@@ -63,7 +63,8 @@ cd wasafati
 ## Author
 
 **Hamza**
-- GitHub: [@yourgithubusername](https://github.com/yourgithubusername)
+- GitHub: [@AkaMizzy](https://github.com/AkaMizzy)
+- Portfolio: [hamzazily-officiel-portfolio.vercel.app](https://hamzazily-officiel-portfolio.vercel.app/)
 - Website: [wasafati.com](https://wasafati.com)
 
 ## Contributing
@@ -82,9 +83,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Hamza - [@yourtwitter](https://twitter.com/yourtwitter)
+Hamza - Portfolio: [hamzazily-officiel-portfolio.vercel.app](https://hamzazily-officiel-portfolio.vercel.app/)
 
-Project Link: [https://github.com/yourusername/wasafati](https://github.com/yourusername/wasafati)
+Project Link: [https://github.com/AkaMizzy/wasafati](https://github.com/AkaMizzy/wasafati)
 
 ## Acknowledgments
 
