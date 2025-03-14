@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Recipe || Final</title>
+    <link rel="shortcut icon" href="./assets/morocco.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <p></p>
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="about.html" class="nav-link"> about </a>
+          <a href="recipes.html" class="nav-link"> recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="page">
+      <div class="recipe-page">
+        <section class="recipe-hero">
+          <img
+            src="./assets/recipes/tajinePoulet.jpg"
+            class="img recipe-hero-img"
+          />
+          <article class="recipe-info">
+            <h2>chicken Tagine</h2>
+            <p>
+              Chicken tagine is a traditional Moroccan dish of chicken pieces braised with spices, garlic, onion, olives, and preserved lemons. It's company-worthy yet easy to throw together.
+            </p>
+            <div class="recipe-icons">
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>prep time</h5>
+                <p>25 min/p>
+              </article>
+              <article style="margin-left: 100px;">
+                <i class="far fa-clock"></i>
+                <h5>cook time</h5>
+                <p>1H - 1H30min.</p>
+              </article>
+              
+            </div>
+            
+          </article>
+        </section>
+        
+        <div class="recipe-actions">
+          <button class="print-btn" onclick="window.print()">
+            <i class="fas fa-print"></i> Print Recipe
+          </button>
+          <div class="share-btns">
+            <button class="btn" onclick="shareRecipe('facebook')">
+              <i class="fab fa-facebook"></i> Share
+            </button>
+            <button class="btn" onclick="shareRecipe('twitter')">
+              <i class="fab fa-twitter"></i> Tweet
+            </button>
+          </div>
+        </div>
+
+        <section class="recipe-content">
+          <article>
+            <h4>instructions</h4>
+            <div class="single-instruction">
+              <header>
+                <p>step 1</p>
+                <div></div>
+              </header>
+              <p>
+                In a bowl, start by putting a small spoon of turmeric, ginger, and pepper. Add a little of saffron, as shown in the video, and squeeze it in the palm of your hand for more taste.
+              </p>
+            </div>
+            <div class="single-instruction">
+              <header>
+                <p>step 2</p>
+                <div></div>
+              </header>
+              <p>
+                Add a spoon and a half of salt, a little of chopped parsley (leave a little bit for the end as decoration), 3 grated cloves of garlic, and finally water (approximatively 6 tablespoons).
+              </p>
+            </div>
+            <div class="single-instruction">
+              <header>
+                <p>step 3</p>
+                <div></div>
+              </header>
+              <p>
+                Mix all these ingredients together and add the meat. In the video, the woman used 1 kilogram of cow meat but you can use any red meat you want.
+              </p>
+            </div>
+            <div class="single-instruction">
+              <header>
+                <p>step 4</p>
+                <div></div>
+              </header>
+              <p>
+                Mix well everything together and leave the bowl covered with a plastic sheet in the refrigerator, preferably overnight. If you don’t have the time, 2 hours or more can do the trick, although it’s always best to let the meat absorb the spices overnight for a better taste.
+              </p>
+            </div>
+            <div class="single-instruction">
+              <header>
+                <p>step 5</p>
+                <div></div>
+              </header>
+              <p>
+                Put a heat diffuser disk on the stove, light the fire, and add the tajine on top of it. Don’t forget to always put your tagine on low heat, never high, no matter what kind of tagine you use!
+              </p>
+            </div>
+            <div class="single-instruction">
+              <header>
+                <p>step 6</p>
+                <div></div>
+              </header>
+              <p>
+                Add about 4 tablespoons of a mixture of olive oil and table oil. Leave to heat just a little (be careful not to burn the oil), and add the meat.
+              </p>
+            </div>
+            <div class="single-instruction">
+              <header>
+                <p>step 7</p>
+                <div></div>
+              </header>
+              <p>
+                Add a large onion cut into pieces on top of the meat. let it cook a little, then turn it over.
+              </p>
+            </div>
+            <div class="single-instruction">
+              <header>
+                <p>step 8</p>
+                <div></div>
+              </header>
+              <p>
+                After 10 minutes, it is time to add the vegetables. Start by adding 1 big grated tomato on top of the meat followed by the rest of the vegetables: green beans, carrots, green squash, peas (200 grams), potatoes. All should be put in a decorative way, as shown in the video.
+              </p>
+            </div>
+            <div class="single-instruction">
+              <header>
+                <p>step 9</p>
+                <div></div>
+              </header>
+              <p>
+                Cover the tagine and let it cook slowly for a while. When the tajine is about to simmer and to prevent the water from overflowing, add a small spoon on the side.
+              </p>
+            </div>
+            <div class="single-instruction">
+              <header>
+                <p>step 10</p>
+                <div></div>
+              </header>
+              <p>
+                Put the sauce on the vegetables so that it takes on the flavor and taste of the tagine. The cooking time varies according to the quality of the meat and vegetables, but it is normally not less than an hour and a half.
+              </p>
+            </div>
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>ingredients</h4>
+              <p class="single-ingredient">1 whole chicken, cut into pieces</p>
+              <p class="single-ingredient">2 large white or yellow onions</p>
+              <p class="single-ingredient">2 to 3 cloves garlic</p>
+              <p class="single-ingredient">1 small handful fresh cilantro</p>
+              <p class="single-ingredient">2 teaspoons ground ginger </p>
+              <p class="single-ingredient">1 teaspoon black pepper </p>
+              <p class="single-ingredient">1/2 teaspoon salt </p>
+              <p class="single-ingredient">1/4 teaspoon saffron threads</p>
+              <p class="single-ingredient">1/4 to 1/2 teaspoon ras el hanout</p>
+              <p class="single-ingredient">1/3 cup olive oil </p>
+
+            </div>
+          </article>
+
+        </section>
+      </div>
+    </main>
+    
+    <script>
+      function shareRecipe(platform) {
+        const url = window.location.href;
+        const title = document.querySelector('.recipe-info h2').textContent;
+        
+        const shareUrls = {
+          facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`,
+          twitter: `https://twitter.com/intent/tweet?text=${title}&url=${url}`
+        };
+        
+        window.open(shareUrls[platform], '_blank');
+      }
+    </script>
+  </body>
+</html>

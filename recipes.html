@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Template || Final</title>
+  
+    <link rel="shortcut icon" href="./assets/morocco.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <p></p>
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="about.html" class="nav-link"> about </a>
+          <a href="recipes.html" class="nav-link"> recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="page">
+      <section class="search-container">
+        <form class="search-form">
+          <input type="text" class="search-input" placeholder="Search recipes..." id="search-input">
+          <button type="submit" class="btn">Search</button>
+        </form>
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">All Recipes</button>
+          <button class="filter-btn" data-filter="main">Main Dishes</button>
+          <button class="filter-btn" data-filter="soup">Soups</button>
+          <button class="filter-btn" data-filter="pastry">Pastries</button>
+        </div>
+      </section>
+      <div class="recipes-list">
+        <a href="single-recipe -1.html" class="recipe">
+          <img
+            src="./assets/recipes/pastille.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Moroccan Pastilla</h5>
+          <p>Prep : 2h30min | Cook : 1h</p>
+        </a>
+        <a href="single-recipe.html" class="recipe">
+          <img
+            src="./assets/recipes/tajinePoulet.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>checken tagine</h5>
+          <p>Prep : 30min | Cook : 1h-1h30min</p>
+        </a>
+        <a href="single-recipe - 2.html" class="recipe">
+          <img
+            src="./assets/recipes/harira-2-moroccan-soup-picturepartners-bigstock-1024x683.jpg.webp"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>harira ( Moroccan soup )</h5>
+          <p>Prep : 45min | Cook : 1h30min</p>
+        </a>
+      </div> 
+      <div class="coming_soon">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+            <hr class="w3-border-grey" style="margin:auto;width:40%">
+          </div>
+        </div>
+      </div>
+          
+    </main>
+    
+    <script>
+      // Search functionality
+      const searchForm = document.querySelector('.search-form');
+      const searchInput = document.querySelector('#search-input');
+      const recipes = document.querySelectorAll('.recipe');
+
+      searchForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const searchTerm = searchInput.value.toLowerCase();
+        
+        recipes.forEach(recipe => {
+          const title = recipe.querySelector('h5').textContent.toLowerCase();
+          if(title.includes(searchTerm)) {
+            recipe.style.display = 'block';
+          } else {
+            recipe.style.display = 'none';
+          }
+        });
+      });
+
+      // Filter functionality
+      const filterBtns = document.querySelectorAll('.filter-btn');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          
+          const filter = btn.dataset.filter;
+          recipes.forEach(recipe => {
+            if(filter === 'all') {
+              recipe.style.display = 'block';
+            } else {
+              const category = recipe.querySelector('h5').textContent.toLowerCase();
+              if(category.includes(filter)) {
+                recipe.style.display = 'block';
+              } else {
+                recipe.style.display = 'none';
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
+
